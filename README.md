@@ -6,8 +6,7 @@ crop mix), clusters zones into recurring "zone types," and benchmarks
 realized yield against the GAEZ potential.
 
 Companion project notes:
-[`project_africa_ag_typology.md`](https://github.com/taimur38/agri-complexity/wiki)
-(Obsidian vault, internal).
+`project_africa_ag_typology.md` (Obsidian vault, internal).
 
 ## Repo layout
 
@@ -58,7 +57,7 @@ under their own namespace and we sync.)
 
 A new collaborator needs only:
 
-1. `git clone git@github.com:taimur38/agri-complexity.git`
+1. `git clone git@github.com:taimur38/morocco-agri-typology.git`
 2. R packages: `tidyverse`, `arrow`, `sf`, `terra`, `tidymodels`, `umap`
    (see scripts for the full list)
 3. Run the pull commands above to get `generated/` and `tool/data/`
