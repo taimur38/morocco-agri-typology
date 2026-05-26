@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <title>Africa AEZ Yield Frontier Explorer</title>
+  <link rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin="" />
+  <link rel="stylesheet" href="styles.css?v=2" />
+</head>
+<body>
+  <header>
+    <div class="title">
+      <h1>Africa AEZ &middot; Yield-Frontier Explorer</h1>
+      <p class="subtitle">
+        Each polygon is a country &times; agro-ecological zone. Colour =
+        composite frontier ratio (within-cluster, p95-anchored). Click a zone
+        to inspect its crops and the within-cluster frontier setters.
+      </p>
+    </div>
+  </header>
+
+  <main>
+    <section id="map-pane">
+      <div id="map"></div>
+      <div id="legend" class="legend">
+        <div class="legend-bar"></div>
+        <div class="legend-ticks">
+          <span>0%</span><span>25%</span><span>50%</span><span>75%</span><span>100%</span>
+        </div>
+        <div class="legend-label">Composite frontier ratio</div>
+      </div>
+    </section>
+
+    <aside id="panel">
+      <div id="panel-empty" class="panel-empty">
+        <h2>Pick a zone</h2>
+        <p>
+          Click a country &times; AEZ polygon on the left to see what it
+          grows, how its yields stack up against the within-cluster frontier
+          (95th percentile), and which zone sets that frontier for each crop.
+        </p>
+        <p class="hint">
+          Hover for a quick read-out. Click on any &ldquo;frontier setter&rdquo;
+          link in the table to jump to that zone.
+        </p>
+      </div>
+
+      <div id="panel-content" hidden>
+        <div class="panel-head">
+          <div class="country-name" id="p-country"></div>
+          <div class="zone-tag" id="p-zone-tag"></div>
+        </div>
+
+        <div class="meta-grid">
+          <div>
+            <div class="meta-key">AEZ regime</div>
+            <div class="meta-val" id="p-regime"></div>
+          </div>
+          <div>
+            <div class="meta-key">Cluster</div>
+            <div class="meta-val" id="p-cluster"></div>
+          </div>
+          <div>
+            <div class="meta-key">Cropped area</div>
+            <div class="meta-val" id="p-area"></div>
+          </div>
+          <div>
+            <div class="meta-key">Composite frontier ratio</div>
+            <div class="meta-val big" id="p-perf"></div>
+          </div>
+        </div>
+
+        <p class="cluster-blurb" id="p-blurb"></p>
+
+        <h3 class="section-head">Top crops &amp; within-cluster frontier</h3>
+        <p class="section-blurb">
+          Where this zone sits relative to the within-cluster yield frontier
+          (95th percentile) on the crops it currently grows, ranked by area.
+        </p>
+        <div class="table-wrap">
+          <table id="p-crops" class="panel-table">
+            <thead>
+              <tr>
+                <th>Crop</th>
+                <th class="num">Area</th>
+                <th class="num">Yield<br><span class="hd-sub">t/ha</span></th>
+                <th class="num">p95 yield<br><span class="hd-sub">t/ha</span></th>
+                <th class="num">% of<br>frontier</th>
+                <th>Frontier setter</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+
+        <h3 class="section-head">Highest-value crops at GAEZ potential</h3>
+        <p class="section-blurb">
+          Currently-grown crops sorted by GAEZ potential output value
+          (potential&nbsp;tonnes &times; producer price). Potential yield is
+          implied from GAEZ&rsquo;s yield gap on currently-cropped land.
+        </p>
+        <div class="table-wrap">
+          <table id="p-potential" class="panel-table">
+            <thead>
+              <tr>
+                <th>Crop</th>
+                <th class="num">Current<br><span class="hd-sub">t/ha</span></th>
+                <th class="num">Potential<br><span class="hd-sub">t/ha</span></th>
+                <th class="num">Price<br><span class="hd-sub">$/t</span></th>
+                <th class="num">Potential<br>value</th>
+                <th class="num">Achiev.</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+          crossorigin=""></script>
+  <script src="app.js?v=2"></script>
+</body>
+</html>

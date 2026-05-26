@@ -1,0 +1,35 @@
+crop,fao_item_code,fao_item_name,note
+BAN,486,Bananas,
+BAN,489,Plantains and cooking bananas,combined into BAN
+BRL,44,Barley,
+COC,661,Cocoa beans,
+COF,656,"Coffee, green",
+CON,249,"Coconuts, in shell",
+COT,328,"Seed cotton, unginned",
+CSV,125,"Cassava, fresh",
+GRD,242,"Groundnuts, excluding shelled",
+MLT,79,Millet,
+MZE,56,Maize (corn),
+OCE,71,Rye,part of OCE
+OCE,75,Oats,part of OCE
+OCE,89,Buckwheat,part of OCE
+OCE,94,Fonio,part of OCE
+OCE,97,Triticale,part of OCE
+OCE,101,Canary seed,part of OCE
+OCE,108,Cereals n.e.c.,part of OCE
+OLP,254,Oil palm fruit,
+POT,116,Potatoes,part of POT
+POT,122,Sweet potatoes,part of POT
+RCW,27,Rice,
+RSD,270,Rape or colza seed,
+RUB,836,Natural rubber in primary forms,
+SES,289,Sesame seed,
+SFL,267,Sunflower seed,
+SOY,236,Soya beans,
+SRG,83,Sorghum,
+SUB,157,Sugar beet,
+SUC,156,Sugar cane,
+TEA,667,Tea leaves,
+TOB,826,Unmanufactured tobacco,
+TOM,388,Tomatoes,
+WHE,15,Wheat,

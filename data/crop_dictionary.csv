@@ -1,0 +1,37 @@
+crop,caption,crop_type,group
+BAN,Banana and plantain,individual,fruits_vegetables
+BRL,Barley,individual,cereals
+CER,Cereals,aggregate,cereals
+COC,Cocoa,individual,industrial_beverage
+COF,Coffee,individual,industrial_beverage
+CON,Coconut,individual,oilseeds
+COT,Seed cotton,individual,industrial_fibre
+CSV,Cassava,individual,roots_tubers
+FDD,Fodder crops,aggregate,fodder
+FRT,Fruits and nuts,aggregate,fruits_vegetables
+GRD,Groundnuts (with shell),individual,oilseeds
+MLT,Millet,individual,cereals
+MZE,Maize,individual,cereals
+NES,All other crops not elsewhere included,aggregate,other
+OCE,Other cereals (oats rye buckwheat and other minor grains),aggregate,cereals
+OIL,Oil crops,aggregate,oilseeds
+OLP,Oil palm fruit,individual,oilseeds
+OOC,Olives and other minor oil crops,aggregate,oilseeds
+ORT,Yams (and other minor root crops),aggregate,roots_tubers
+OVG,Other vegetables,aggregate,fruits_vegetables
+PLS,Pulses,aggregate,pulses
+POT,White potato and sweet potato,aggregate,roots_tubers
+RCW,Rice,individual,cereals
+RSD,Rapeseed,individual,oilseeds
+RTS,Root and tuber crops,aggregate,roots_tubers
+RUB,Para rubber,individual,industrial_fibre
+SES,Sesame seed,individual,oilseeds
+SFL,Sunflower seed,individual,oilseeds
+SOY,Soybean,individual,oilseeds
+SRG,Sorghum,individual,cereals
+SUB,Sugar beet,individual,sugar
+SUC,Sugarcane,individual,sugar
+TEA,Tea and mate leaves,individual,industrial_beverage
+TOB,Tobacco leaves,individual,industrial_fibre
+TOM,Tomato,individual,fruits_vegetables
+WHE,Wheat,individual,cereals

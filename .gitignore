@@ -1,0 +1,16 @@
+# Data lives on UM6P Data Playground — see README.
+generated/
+tool/data/
+
+# R / RStudio
+.Rhistory
+.RData
+.Rproj.user/
+Rplots.pdf
+*_files/
+
+# Claude local-only state
+.claude/settings.local.json
+
+# macOS
+.DS_Store
